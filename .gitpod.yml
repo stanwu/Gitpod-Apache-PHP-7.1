@@ -14,4 +14,4 @@ tasks:
 - name: Apache
   command: >
     apachectl start &&
-    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
+    tail -f /var/log/apache2/*.log
